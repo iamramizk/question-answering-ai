@@ -13,7 +13,9 @@ Given there is a max length to the model, if the total text passed as the input 
 
 ## Running the app
 
-### (Live link)[https://iamramizk-question-answering-ai-app-q9gnoi.streamlit.app/] hosted via streamlit cloud
+### Hosted via streamlit cloud
+
+(Live link)[https://iamramizk-question-answering-ai-app-q9gnoi.streamlit.app/]
 
 ### Installing on \*nix
 
