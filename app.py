@@ -80,7 +80,8 @@ if "wordcount" not in st.session_state:
 #     return answer.strip().capitalize()
 
 
-@st.cache(hash_funcs={Predictor: hash}, suppress_st_warning=True)
+@st.cache(allow_output_mutation=True)
+# @st.cache(hash_funcs={Predictor: hash}, suppress_st_warning=True)
 def load_predictor():
     predictor = Predictor.from_path(
         "https://storage.googleapis.com/allennlp-public-models/bidaf-elmo.2021-02-11.tar.gz"
