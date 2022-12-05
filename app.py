@@ -172,7 +172,7 @@ if len(st.session_state["text"]) > 2:
     if question:
         if not question.endswith("?"):
             question = question.strip() + "?"
-        text_chunks = corpus_to_chucks(st.session_state["text"], chunk_max_words=2000)
+        text_chunks = corpus_to_chucks(st.session_state["text"], chunk_max_words=400)
 
         st.markdown("***")
         previous_answers = []
@@ -183,9 +183,8 @@ if len(st.session_state["text"]) > 2:
 
             # If answer is not too similar to previous answer, show answer
             if not is_similar(answer, previous_answers, ratio=95) and answer:
-                st.caption(f"Answer {print_count}")
+                st.caption(f"Answer {print_count} - Confidence: {round(score, 2)}")
                 st.write(answer)
-                st.write(f"Confidence: {score}")
                 st.write("")
                 print_count += 1
                 previous_answers.append(answer)
