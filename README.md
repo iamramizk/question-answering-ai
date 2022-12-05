@@ -24,7 +24,7 @@ Given there is a max length to the model, if the total text passed as the input 
 ```
 git clone https://github.com/iamramizk/question-answering-ai
 cd question-answering-ai
-python3 -m .venv
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
