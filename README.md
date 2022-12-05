@@ -4,6 +4,8 @@ Streamlit GUI that receives any text input from a PDF, Image OCR, Wikipedia Page
 
 Given there is a max length to the model, if the total text passed as the input is larger than the max size, it will chunk it into appropriate sizes by sentence, and will run the model iteratively.
 
+![Example](https://github.com/iamramizk/question-answering-ai/blob/main/assets/qa-ai-showcase.gif)
+
 ## How to use
 
 1. Select input type
@@ -15,9 +17,9 @@ Given there is a max length to the model, if the total text passed as the input 
 
 ### Hosted via streamlit cloud
 
-(Live link)[https://iamramizk-question-answering-ai-app-q9gnoi.streamlit.app/]
+[Live link](https://iamramizk-question-answering-ai-app-q9gnoi.streamlit.app/)
 
-### Installing on \*nix
+### Installing locally
 
 ```
 git clone https://github.com/iamramizk/question-answering-ai
